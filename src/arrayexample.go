@@ -11,7 +11,8 @@ func main() {
 	fmt.Printf("strArray1: %v\n", strArray1)
 	fmt.Printf("strArray2: %v\n", strArray2)
 
-	strArray1[0] = "Canada"
+	//strArray1[0] = "Canada"
+	strArray3[0] = "Canada"
 
 	fmt.Printf("strArray1: %v\n", strArray1)
 	fmt.Printf("strArray2: %v\n", strArray2)
