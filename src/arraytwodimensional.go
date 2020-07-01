@@ -10,11 +10,20 @@ func main() {
 	for i = 0; i < 3; i++ {
 		for j = 0; j < 4; j++ {
 			fmt.Print("Enter value for two dimensional array: ")
-			fmt.Scan(&arrayTwo[i][j])
-
+			fmt.Scanf("%d\n", &arrayTwo[i][j])
 		}
-		fmt.Println(arrayTwo)
-		fmt.Println("")
+
+	}
+	for i = 0; i < 3; i++ {
+		for j = 0; j < 4; j++ {
+
+			fmt.Printf(" %d ", arrayTwo[i][j])
+
+			if j == 3 {
+				fmt.Println("")
+			}
+		}
+
 	}
 
 }
