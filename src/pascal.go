@@ -16,7 +16,7 @@ func main() {
 				fmt.Print("1")
 			} else {
 
-				val = col * (row - col + 1) / col
+				val = ((row - col + 1) + (col - 2))
 
 				fmt.Print(val)
 				//fmt.Print("*")
