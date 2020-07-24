@@ -3,16 +3,16 @@ package main
 import "fmt"
 
 func main() {
-	var i int
 
-	ch := make(chan int, 2)
+	a := make(chan int, 3)
 
-	go func() {
-		ch <- 1
-		ch <- 2
-	}()
-	i = <-ch
-	j := <-ch
-	fmt.Println(i)
-	fmt.Println(j)
+	a <- 1
+	a <- 2
+	a <- 3
+	close(a)
+
+	for i := range a {
+		fmt.Println(i)
+	}
+
 }
