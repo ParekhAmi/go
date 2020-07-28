@@ -19,17 +19,17 @@ type circle struct {
 }
 
 func (r rectangle) area() float64 {
-	return math.Ceil(r.length * r.width)
+	return r.length * r.width
 }
 
 func (r rectangle) perimeter() float64 {
-	return math.Ceil(2 * (r.length + r.width))
+	return 2 * (r.length + r.width)
 }
 func (c circle) area() float64 {
-	return math.Ceil(math.Pi * c.radius * c.radius)
+	return math.Pi * c.radius * c.radius
 }
 func (c circle) perimeter() float64 {
-	return math.Ceil(2 * math.Pi * c.radius)
+	return 2 * math.Pi * c.radius
 }
 
 func measure(g geometry) {
