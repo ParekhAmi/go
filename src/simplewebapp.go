@@ -10,6 +10,16 @@ import (
 }*/
 
 func home(w http.ResponseWriter, r *http.Request) {
+
+	// Check if the current request URL path exactly matches "/".
+	//If it doesn't, use the http.NotFound() function to send a 404 response to the client.
+
+	// Like.... http://localhost:8000/missing. You should get a 404 page not found
+
+	if r.URL.Path != "/" {
+		http.NotFound(w, r)
+		return
+	}
 	w.Write([]byte("Hello from Snippetbox"))
 }
 
