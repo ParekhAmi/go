@@ -16,7 +16,7 @@ func main() {
 	con, err := sql.Open("mysql", "root:example@/db_1")
 
 	if con != nil {
-		fmt.Println("Connection is done....")
+		fmt.Println("Connection is done...")
 	}
 
 	// if there is an error opening the connection, handle it
